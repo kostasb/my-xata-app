@@ -46,6 +46,10 @@ export default function PostsListPage({ records }: { records: Posts[] }) {
 
           <p>{record.body}</p>
 
+          <p>{record.number}</p>
+
+          <p>a new commit</p>
+
         </div>
 
       ))}
