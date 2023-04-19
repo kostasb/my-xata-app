@@ -30,7 +30,7 @@ export type DatabaseSchema = {
 const DatabaseClient = buildClient();
 
 const defaultOptions = {
-  databaseURL: "https://repro-u9dnts.eu-west-1.xata.sh/db/pworkflow",
+  databaseURL: "https://repro-u9dnts.eu-west-1.xata.sh/db/my-xata-app",
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {
