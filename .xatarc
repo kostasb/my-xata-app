@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://repro-u9dnts.eu-west-1.xata.sh/db/pworkflow",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
