@@ -13,6 +13,7 @@ const tables = [
       { name: "title", type: "string" },
       { name: "body", type: "text" },
       { name: "pubDate", type: "datetime" },
+      { name: "number", type: "int" },
     ],
   },
 ] as const;

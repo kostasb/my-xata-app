@@ -46,8 +46,6 @@ export default function PostsListPage({ records }: { records: Posts[] }) {
 
           <p>{record.body}</p>
 
-          <p>{record.pubDate}</p>
-
         </div>
 
       ))}
