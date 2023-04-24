@@ -50,6 +50,8 @@ export default function PostsListPage({ records }: { records: Posts[] }) {
 
           <p>a new commit</p>
 
+	  <p>{record.float2}</p>
+
         </div>
 
       ))}

@@ -1,0 +1,17 @@
+{
+  "id": "mig_ch33u4uf8thee6s2q54g",
+  "parentID": "mig_ch33fmeehqla4239o6ng",
+  "checksum": "1:19282850f5492c3d276d8224af2711cb5fad99fc0c408ef806507843b7cdccf8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "float2",
+          "type": "float",
+          "defaultValue": "1.0"
+        },
+        "table": "Posts"
+      }
+    }
+  ]
+}
