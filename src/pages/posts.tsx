@@ -48,7 +48,7 @@ export default function PostsListPage({ records }: { records: Posts[] }) {
 
           <p>{record.number}</p>
 
-          <p>{record.myfloat}>/p>
+          <p>{record.myfloat}</p>
 
           <p>a new commit</p>
 
