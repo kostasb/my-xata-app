@@ -14,6 +14,7 @@ const tables = [
       { name: "body", type: "text" },
       { name: "pubDate", type: "datetime" },
       { name: "number", type: "int" },
+      { name: "float", type: "float", defaultValue: "0" },
     ],
   },
 ] as const;
