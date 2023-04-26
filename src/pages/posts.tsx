@@ -46,6 +46,8 @@ export default function PostsListPage({ records }: { records: Posts[] }) {
 
           <p>{record.newstring1}</p>
 
+          <p>{record.newstring2}</p>
+
         </div>
 
       ))}

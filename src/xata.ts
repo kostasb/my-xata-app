@@ -17,6 +17,7 @@ const tables = [
       { name: "float", type: "float", defaultValue: "0" },
       { name: "float2", type: "float", defaultValue: "1.0" },
       { name: "newstring1", type: "string" },
+      { name: "newstring2", type: "string" },
     ],
   },
 ] as const;
