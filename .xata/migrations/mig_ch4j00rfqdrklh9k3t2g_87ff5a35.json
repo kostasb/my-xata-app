@@ -1,0 +1,298 @@
+{
+  "id": "mig_ch4j00rfqdrklh9k3t2g",
+  "parentID": "mig_ch4j00rfqdrklh9k3t1g",
+  "checksum": "1:87ff5a35773a70c9ab5496a375db0fc7f11bff2c9b9a8c3189f969699f675c66",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "workspace_name",
+          "type": "string"
+        },
+        "table": "workspaces"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "workspace_state",
+          "type": "string"
+        },
+        "table": "workspaces"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "workspace_id",
+          "type": "string"
+        },
+        "table": "workspaces"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "organization_name",
+          "type": "string"
+        },
+        "table": "workspaces"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "plan",
+          "type": "string"
+        },
+        "table": "workspaces"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "user_emails",
+          "type": "multiple"
+        },
+        "table": "workspaces"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "version",
+          "type": "int"
+        },
+        "table": "workspaces"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "created_at",
+          "type": "string"
+        },
+        "table": "workspaces"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "member_count",
+          "type": "int"
+        },
+        "table": "workspaces"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "owner_count",
+          "type": "int"
+        },
+        "table": "workspaces"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "workspace_id",
+          "type": "string"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "database_name",
+          "type": "string"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "branch_name",
+          "type": "string"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "schema",
+          "type": "text"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "linked_workspace",
+          "type": "link",
+          "link": {
+            "table": "workspaces"
+          }
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "SK",
+          "type": "string"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "created_at",
+          "type": "string"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "cell_id",
+          "type": "string"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "branch_id",
+          "type": "string"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "allocated_units",
+          "type": "int"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "assigned_units",
+          "type": "int"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "usageplan_updated_at",
+          "type": "string"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "usageplan_created_at",
+          "type": "string"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "schema_json",
+          "type": "text"
+        },
+        "table": "databases"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "email",
+          "type": "email"
+        },
+        "table": "users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string"
+        },
+        "table": "users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "workspaces",
+          "type": "multiple"
+        },
+        "table": "users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "version",
+          "type": "int"
+        },
+        "table": "users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "created_at",
+          "type": "string"
+        },
+        "table": "users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "resync_needed",
+          "type": "bool"
+        },
+        "table": "data_integrity"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "timestamp",
+          "type": "datetime"
+        },
+        "table": "data_integrity"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "cause",
+          "type": "string"
+        },
+        "table": "data_integrity"
+      }
+    }
+  ]
+}
