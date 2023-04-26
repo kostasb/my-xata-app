@@ -19,6 +19,6 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@xata.io/netlify": "^0.1.0"
+    "@xata.io/netlify": "^0.0.0-alpha.va6afc13"
   }
 }
