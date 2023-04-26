@@ -1,4 +1,4 @@
-import { getXataClient, Posts } from '../xata'
+import { getXataClient, Databases } from '../xata'
 
 const xata = getXataClient()
 

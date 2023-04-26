@@ -86,7 +86,7 @@ export type DatabaseSchema = {
 const DatabaseClient = buildClient();
 
 const defaultOptions = {
-  databaseURL: "https://support-37m01j.eu-west-1.xata.sh/db/staging-catalog",
+  databaseURL: "https://repro-u9dnts.eu-west-1.xata.sh/db/prod-catalog-copy",
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {
