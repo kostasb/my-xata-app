@@ -5,7 +5,7 @@ const xata = getXataClient()
 
 export const getServerSideProps = async () => {
 
-  const records: Posts[] = await xata.db.Posts.getMany()
+  const records: Posts[] = await xata.db.databases.getMany()
 
   return {
 
@@ -14,8 +14,6 @@ export const getServerSideProps = async () => {
       records: records.map((record) => ({
 
         ...record,
-
-        pubDate: record.pubDate?.toDateString(),
 
       })),
 
