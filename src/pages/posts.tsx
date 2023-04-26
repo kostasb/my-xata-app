@@ -14,7 +14,7 @@ export const getServerSideProps = async () => {
       records: records.map((record) => ({
 
         ...record,
-
+        pubDate: record.pubDate?.toDateString(),
       })),
 
     },
