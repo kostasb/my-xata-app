@@ -1,11 +1,11 @@
-import { getXataClient, Databases } from '../xata'
+import { getXataClient, Posts } from '../xata'
 
 const xata = getXataClient()
 
 
 export const getServerSideProps = async () => {
 
-  const records: Posts[] = await xata.db.databases.getMany()
+  const records: Posts[] = await xata.db.Posts.getMany()
 
   return {
 
@@ -32,17 +32,17 @@ export default function PostsListPage({ records }: { records: Posts[] }) {
 
     <>
 
-      <h1>My xata databases</h1>
+      <h1>My xata posts</h1>
 
       {records.map((record: Posts) => (
 
         <div key={record.id}>
 
-          <h2>{record.workspace_id}</h2>
+          <h2>{record.title}</h2>
 
-          <p>{record.database_name}</p>
+          <p>{record.id}</p>
 
-          <p>{record.branch_name}</p>
+          <p>{record.body}</p>
 
         </div>
 
