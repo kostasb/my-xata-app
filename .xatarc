@@ -1,5 +1,5 @@
 {
-  "databaseURL": "https://repro-u9dnts.eu-west-1.xata.sh/db/my-xata-app",
+  "databaseURL": "https://repro-u9dnts.eu-west-1.xata.sh/db/prod-catalog-copy",
   "codegen": {
     "output": "src/xata.ts"
   }
