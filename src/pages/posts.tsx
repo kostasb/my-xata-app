@@ -5,7 +5,7 @@ const xata = getXataClient()
 
 export const getServerSideProps = async () => {
 
-  const records: Posts[] = await xata.db.databases.getMany()
+  const records: Databases[] = await xata.db.databases.getMany()
 
   return {
 
@@ -26,7 +26,7 @@ export const getServerSideProps = async () => {
 
 // Pass the props defined above to the page and map against it
 
-export default function PostsListPage({ records }: { records: Posts[] }) {
+export default function PostsListPage({ records }: { records: Databases[] }) {
 
   return (
 
@@ -34,7 +34,7 @@ export default function PostsListPage({ records }: { records: Posts[] }) {
 
       <h1>My xata databases</h1>
 
-      {records.map((record: Posts) => (
+      {records.map((record: Databases) => (
 
         <div key={record.id}>
 
