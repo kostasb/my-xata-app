@@ -39,7 +39,6 @@ const tables = [
       { name: "usageplan_updated_at", type: "string" },
       { name: "usageplan_created_at", type: "string" },
       { name: "schema_json", type: "text" },
-      { name: "newcolumn", type: "string" },
     ],
   },
   {
