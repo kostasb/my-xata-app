@@ -1,2 +1,2 @@
 [[plugins]]
-package = "@xata.io/netlify"
+  package = "@xata.io/netlify"
