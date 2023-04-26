@@ -1,0 +1,16 @@
+{
+  "id": "mig_ch4jrgjfqdrklh9k5bcg",
+  "parentID": "mig_ch4j00rfqdrklh9k3t2g",
+  "checksum": "1:59ba284f45986ae724aa56cc672774a8f96bf9fa7643b9ad4db8dd606e9e8f49",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "newcolumn",
+          "type": "string"
+        },
+        "table": "databases"
+      }
+    }
+  ]
+}
