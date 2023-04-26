@@ -34,23 +34,17 @@ export default function PostsListPage({ records }: { records: Posts[] }) {
 
     <>
 
-      <h1>My xata posts</h1>
+      <h1>My xata databases</h1>
 
       {records.map((record: Posts) => (
 
         <div key={record.id}>
 
-          <h2>{record.title}</h2>
+          <h2>{record.workspace_id}</h2>
 
-          <p>{record.id}</p>
+          <p>{record.database_name}</p>
 
-          <p>{record.body}</p>
-
-          <p>{record.number}</p>
-
-          <p>a new commit</p>
-
-	  <p>{record.float2}</p>
+          <p>{record.branch_name}</p>
 
         </div>
 

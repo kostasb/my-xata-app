@@ -8,14 +8,55 @@ import type {
 
 const tables = [
   {
-    name: "Posts",
+    name: "workspaces",
     columns: [
-      { name: "title", type: "string" },
-      { name: "body", type: "text" },
-      { name: "pubDate", type: "datetime" },
-      { name: "number", type: "int" },
-      { name: "float", type: "float", defaultValue: "0" },
-      { name: "float2", type: "float", defaultValue: "1.0" },
+      { name: "workspace_name", type: "string" },
+      { name: "workspace_state", type: "string" },
+      { name: "workspace_id", type: "string" },
+      { name: "organization_name", type: "string" },
+      { name: "plan", type: "string" },
+      { name: "user_emails", type: "multiple" },
+      { name: "version", type: "int" },
+      { name: "created_at", type: "string" },
+      { name: "member_count", type: "int" },
+      { name: "owner_count", type: "int" },
+    ],
+  },
+  {
+    name: "databases",
+    columns: [
+      { name: "workspace_id", type: "string" },
+      { name: "database_name", type: "string" },
+      { name: "branch_name", type: "string" },
+      { name: "schema", type: "text" },
+      { name: "linked_workspace", type: "link", link: { table: "workspaces" } },
+      { name: "SK", type: "string" },
+      { name: "created_at", type: "string" },
+      { name: "cell_id", type: "string" },
+      { name: "branch_id", type: "string" },
+      { name: "allocated_units", type: "int" },
+      { name: "assigned_units", type: "int" },
+      { name: "usageplan_updated_at", type: "string" },
+      { name: "usageplan_created_at", type: "string" },
+      { name: "schema_json", type: "text" },
+    ],
+  },
+  {
+    name: "users",
+    columns: [
+      { name: "email", type: "email" },
+      { name: "name", type: "string" },
+      { name: "workspaces", type: "multiple" },
+      { name: "version", type: "int" },
+      { name: "created_at", type: "string" },
+    ],
+  },
+  {
+    name: "data_integrity",
+    columns: [
+      { name: "resync_needed", type: "bool" },
+      { name: "timestamp", type: "datetime" },
+      { name: "cause", type: "string" },
     ],
   },
 ] as const;
@@ -23,17 +64,29 @@ const tables = [
 export type SchemaTables = typeof tables;
 export type InferredTypes = SchemaInference<SchemaTables>;
 
-export type Posts = InferredTypes["Posts"];
-export type PostsRecord = Posts & XataRecord;
+export type Workspaces = InferredTypes["workspaces"];
+export type WorkspacesRecord = Workspaces & XataRecord;
+
+export type Databases = InferredTypes["databases"];
+export type DatabasesRecord = Databases & XataRecord;
+
+export type Users = InferredTypes["users"];
+export type UsersRecord = Users & XataRecord;
+
+export type DataIntegrity = InferredTypes["data_integrity"];
+export type DataIntegrityRecord = DataIntegrity & XataRecord;
 
 export type DatabaseSchema = {
-  Posts: PostsRecord;
+  workspaces: WorkspacesRecord;
+  databases: DatabasesRecord;
+  users: UsersRecord;
+  data_integrity: DataIntegrityRecord;
 };
 
 const DatabaseClient = buildClient();
 
 const defaultOptions = {
-  databaseURL: "https://repro-u9dnts.eu-west-1.xata.sh/db/my-xata-app",
+  databaseURL: "https://support-37m01j.eu-west-1.xata.sh/db/staging-catalog",
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {

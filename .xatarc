@@ -1,5 +1,5 @@
 {
-  "databaseURL": "https://repro-u9dnts.eu-west-1.xata.sh/db/my-xata-app",
+  "databaseURL": "https://support-37m01j.eu-west-1.xata.sh/db/staging-catalog",
   "codegen": {
     "output": "src/xata.ts"
   }
