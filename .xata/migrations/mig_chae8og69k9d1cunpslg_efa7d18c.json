@@ -1,0 +1,16 @@
+{
+  "id": "mig_chae8og69k9d1cunpslg",
+  "parentID": "mig_chae8ml7h0k2tmqcpa00",
+  "checksum": "1:efa7d18c16a35aac09a5db22ed2cf9739f4fe102ad6cc8eebd55b8f3d685c6fe",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "previous.npsScore",
+          "type": "int"
+        },
+        "table": "test"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_che8t5hro505388mq4mg",
+  "parentID": "mig_che8r97dge7fvt4di4ug",
+  "checksum": "1:e325e3f9d5dc4d3726217dc23de3d4b4aefda124d80603d5aa7544a47600385c",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "myfeature",
+          "type": "string"
+        },
+        "table": "Posts"
+      }
+    }
+  ]
+}

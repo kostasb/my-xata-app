@@ -1,0 +1,16 @@
+{
+  "id": "mig_chae6bqll9ngtigkdjd0",
+  "parentID": "mig_ch33u4uf8thee6s2q54g",
+  "checksum": "1:9285c06194fdc01a04f68aa807a1c63c24f6c712fe7ce5ddf8dee3198d2a3af6",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "myobj.int",
+          "type": "int"
+        },
+        "table": "Posts"
+      }
+    }
+  ]
+}

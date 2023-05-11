@@ -1,0 +1,13 @@
+{
+  "id": "mig_chaif0fdge7fvt4dhltg",
+  "parentID": "mig_chaievndge7fvt4dhlsg",
+  "checksum": "1:0aee2aa0389c8e88e156cd7e46157d9a2bd48d14c7040704d01f3e95d4d99966",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "previous.npsScore",
+        "table": "client_nps_results"
+      }
+    }
+  ]
+}

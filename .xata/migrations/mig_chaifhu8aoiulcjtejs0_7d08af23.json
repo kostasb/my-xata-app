@@ -1,0 +1,13 @@
+{
+  "id": "mig_chaifhu8aoiulcjtejs0",
+  "parentID": "mig_chaif2e8aoiulcjtejr0",
+  "checksum": "1:7d08af23c11b6a144fbc917fa24a2fb51562f74e98396df10045a273cdec4d00",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "t",
+        "oldName": "client_nps_results"
+      }
+    }
+  ]
+}
