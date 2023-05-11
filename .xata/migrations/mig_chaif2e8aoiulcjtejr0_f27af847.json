@@ -1,0 +1,16 @@
+{
+  "id": "mig_chaif2e8aoiulcjtejr0",
+  "parentID": "mig_chaif0fdge7fvt4dhltg",
+  "checksum": "1:f27af84760dbc7bb8ee3715b07b61f7e356c41b8b3a6cc93d694ff13cb5f3bf7",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "myint",
+          "type": "int"
+        },
+        "table": "client_nps_results"
+      }
+    }
+  ]
+}
