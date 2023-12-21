@@ -1,0 +1,14 @@
+{
+  "id": "mig_cm20iuhhjjfo3alqtflg",
+  "parentID": "mig_cm20isc5viptb2n012ag",
+  "checksum": "1:f02c90bdafc89883a8585d15abf6448ba6ec7c98d68a91b9fe2fd05f41a6d342",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "pubDate",
+        "oldName": "pubdate",
+        "table": "Posts"
+      }
+    }
+  ]
+}

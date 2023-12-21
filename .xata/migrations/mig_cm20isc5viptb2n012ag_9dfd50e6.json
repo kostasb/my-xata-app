@@ -1,0 +1,16 @@
+{
+  "id": "mig_cm20isc5viptb2n012ag",
+  "parentID": "mig_cm20il9hjjfo3alqtfkg",
+  "checksum": "1:9dfd50e6e04599ac83c7d0b8b56babfc1e1875f597b549d156436c0455b1e0df",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "pubdate",
+          "type": "datetime"
+        },
+        "table": "Posts"
+      }
+    }
+  ]
+}

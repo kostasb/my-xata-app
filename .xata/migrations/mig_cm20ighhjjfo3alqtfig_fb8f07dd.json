@@ -1,0 +1,11 @@
+{
+  "id": "mig_cm20ighhjjfo3alqtfig",
+  "checksum": "1:fb8f07ddb4c57020adfbaf635453bdd20044e808672c6baa487e7aee54044c6a",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Posts"
+      }
+    }
+  ]
+}
