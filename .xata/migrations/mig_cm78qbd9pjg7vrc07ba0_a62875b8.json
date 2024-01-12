@@ -1,0 +1,12 @@
+{
+  "id": "mig_cm78qbd9pjg7vrc07ba0",
+  "parentID": "mig_cm20j6k5viptb2n012cg",
+  "checksum": "1:a62875b856595b06a6925317b6d0fe451e62ec391bb542abe93964984f4d4705",
+  "operations": [
+    {
+      "addTable": {
+        "table": "drivers"
+      }
+    }
+  ]
+}

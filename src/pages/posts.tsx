@@ -42,8 +42,6 @@ export default function PostsListPage({ records }: { records: Posts[] }) {
 
           <p>{record.id}</p>
 
-          <p>{record.body}</p>
-
         </div>
 
       ))}
