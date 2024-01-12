@@ -38,12 +38,6 @@ export default function PostsListPage({ records }: { records: Posts[] }) {
 
         <div key={record.id}>
 
-          <h2>{record.title}</h2>
-
-          <p>{record.id}</p>
-
-          <p>{record.body}</p>
-
         </div>
 
       ))}
