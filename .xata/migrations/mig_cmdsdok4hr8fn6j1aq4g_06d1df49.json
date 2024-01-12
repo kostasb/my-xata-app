@@ -1,0 +1,12 @@
+{
+  "id": "mig_cmdsdok4hr8fn6j1aq4g",
+  "parentID": "mig_cmdsdic4hr8fn6j1aq0g",
+  "checksum": "1:06d1df49b3f268f989f923e3db05eeb72530e6eb4fa1ef7ec8acc5fdb4710f57",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "drivers"
+      }
+    }
+  ]
+}

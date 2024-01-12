@@ -1,0 +1,16 @@
+{
+  "id": "mig_cm78qid9pjg7vrc07bd0",
+  "parentID": "mig_cm78qh59pjg7vrc07bc0",
+  "checksum": "1:40724103d42ed75bd4b4dea1a5f7f47e71947eedcdc6219f7f67e87be55eb85f",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "nationality",
+          "type": "string"
+        },
+        "table": "drivers"
+      }
+    }
+  ]
+}

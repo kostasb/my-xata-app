@@ -11,11 +11,10 @@ const tables = [
     name: "Posts",
     columns: [
       { name: "title", type: "string" },
-      { name: "body", type: "text" },
+      { name: "slug", type: "string" },
+      { name: "description", type: "text" },
       { name: "pubDate", type: "datetime" },
-      { name: "number", type: "int" },
-      { name: "float", type: "float", defaultValue: "0" },
-      { name: "float2", type: "float", defaultValue: "1" },
+      { name: "test1", type: "string" },
     ],
   },
 ] as const;
