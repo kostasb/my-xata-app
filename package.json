@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run xata-init && prisma generate && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "xata-init": "xata init --db https://repro-391u7k.eu-west-1.xata.sh/db/my-xata-app --sdk --no-input --yes --package-manager=npm --codegen src/xata.ts --force"
