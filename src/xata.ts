@@ -10,10 +10,62 @@ const tables = [
   {
     name: "Posts",
     columns: [
-      { name: "title", type: "string" },
-      { name: "slug", type: "string" },
-      { name: "description", type: "text" },
-      { name: "pubDate", type: "datetime" },
+      {
+        name: "description",
+        type: "text",
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+      },
+      {
+        name: "pubDate",
+        type: "datetime",
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+      },
+      {
+        name: "slug",
+        type: "text",
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+      },
+      {
+        name: "title",
+        type: "text",
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+      },
+      {
+        name: "xata_createdat",
+        type: "datetime",
+        notNull: true,
+        unique: false,
+        defaultValue: "now()",
+      },
+      {
+        name: "xata_id",
+        type: "text",
+        notNull: true,
+        unique: true,
+        defaultValue: "('rec_'::text || (xata_private.xid())::text)",
+      },
+      {
+        name: "xata_updatedat",
+        type: "datetime",
+        notNull: true,
+        unique: false,
+        defaultValue: "now()",
+      },
+      {
+        name: "xata_version",
+        type: "int",
+        notNull: true,
+        unique: false,
+        defaultValue: "0",
+      },
     ],
   },
 ] as const;
@@ -31,7 +83,7 @@ export type DatabaseSchema = {
 const DatabaseClient = buildClient();
 
 const defaultOptions = {
-  databaseURL: "https://repro-391u7k.eu-central-1.xata.sh/db/my-xata-app",
+  databaseURL: "https://repro-391u7k.eu-west-1.xata.sh/db/my-xata-app",
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {

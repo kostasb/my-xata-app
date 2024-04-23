@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run xata-init && next build",
+    "build": "npm run xata-init && prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
-    "xata-init": "xata init --db https://repro-391u7k.eu-central-1.xata.sh/db/my-xata-app --sdk --no-input --yes --package-manager=npm --codegen src/xata.ts --force"
+    "xata-init": "xata init --db https://repro-391u7k.eu-west-1.xata.sh/db/my-xata-app --sdk --no-input --yes --package-manager=npm --codegen src/xata.ts --force"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.8",
@@ -27,7 +27,7 @@
     "@tanstack/react-table": "^8.12.0",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
-    "@xata.io/cli": "^0.15.11",
+    "@xata.io/cli": "next",
     "@xata.io/client": "^0.29.4",
     "autoprefixer": "^10.4.19",
     "class-variance-authority": "^0.7.0",

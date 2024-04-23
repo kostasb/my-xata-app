@@ -1,0 +1,24 @@
+{
+  "done": true,
+  "migration": {
+    "name": "mig_cojq6tnd4da3t9v9fav0",
+    "operations": [
+      {
+        "add_column": {
+          "table": "Posts",
+          "column": {
+            "pk": false,
+            "name": "pubDate",
+            "type": "timestamptz",
+            "unique": false,
+            "nullable": true
+          }
+        }
+      }
+    ]
+  },
+  "migrationType": "pgroll",
+  "name": "mig_cojq6tnd4da3t9v9fav0",
+  "parent": "mig_cojq6r7a7g2gf060a0ug",
+  "startedAt": "2024-04-23T12:03:03.68211Z"
+}
