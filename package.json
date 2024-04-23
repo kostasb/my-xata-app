@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run xata-init && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "xata-init": "xata init --db https://repro-391u7k.eu-central-1.xata.sh/db/my-xata-app:main --sdk --no-input --yes --package-manager=npm --codegen src/xata.ts --force"
   },
   "dependencies": {
     "@types/node": "20.12.7",
