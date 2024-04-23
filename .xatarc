@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://repro-391u7k.eu-central-1.xata.sh/db/my-xata-app",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
