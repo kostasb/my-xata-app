@@ -1,5 +1,5 @@
 {
-  "databaseURL": "https://repro-391u7k.eu-central-1.xata.sh/db/my-xata-app",
+  "databaseURL": "https://test1-r7pmtd.us-east-1.xata.sh/db/pg-my-xata-app",
   "codegen": {
     "output": "src/xata.ts"
   }
