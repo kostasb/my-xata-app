@@ -15,6 +15,7 @@ export default async function Home({
     posts = await xata.db.Posts.getAll();
   }
 
+
   return (
     <>
       <div className="w-full max-w-5xl mt-16">
