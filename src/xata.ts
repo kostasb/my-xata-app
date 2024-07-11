@@ -11,7 +11,21 @@ const tables = [
     name: "Posts",
     columns: [
       {
+        name: "description",
+        type: "text",
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+      },
+      {
         name: "slug",
+        type: "text",
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+      },
+      {
+        name: "title",
         type: "text",
         notNull: false,
         unique: false,

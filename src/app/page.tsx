@@ -32,9 +32,6 @@ export default async function Home({
         {posts.length === 0 && <p>No blog posts found</p>}
         {posts.map((post) => (
           <div key={post.id} className="mb-16">
-            <p className="mb-2 text-xs text-purple-950 dark:text-purple-200">
-              {post.pubDate?.toDateString()}
-            </p>
             <h2 className="mb-2 text-2xl">
               <a href={`posts/${post.slug}`}>{post.title}</a>
             </h2>
